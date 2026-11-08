@@ -1,165 +1,165 @@
 # LuckyLoop
 
-LuckyLoop ist ein Live-Video-Instrument für macOS. Eine Kamera, ein iPhone oder ein Syphon-Bild wird zur Schleife, das Livebild liegt darüber, und jede weitere Aufnahme wird eine neue Ebene. Darüber liegen Stoptrick, Zeichnung, Text und Effekte. Das Ergebnis geht an Syphon und an einen zweiten Bildschirm.
+LuckyLoop is a live video instrument for macOS. A camera, an iPhone, or a Syphon feed becomes a loop, the live image sits on top, and each further take becomes another layer. Stoptrick, drawing, text, and effects sit on top of that. The result goes out to Syphon and to a second display.
 
-Gebaut für improvisierte Bühnenbilder. Unten steht der Ablauf vom Auftritt **Styronauten, DH5**: Schwarzlicht, Gegenstände auf dem Tisch, Loops direkt zur Musik.
+Built for improvised stage pictures. Below is the run of the show **Styronauten, DH5**: blacklight, objects on the table, loops played straight to the music.
 
-Die Oberfläche im Modus FX. Oben die sechs Modi, rechts die Effektliste, unten die Tastatur. Im Bildfeld liegt ein Export aus dem Styronauten-Ordner, Hand und Feder.
+The interface in FX mode. The six modes sit along the top, the effect list on the right, the keyboard along the bottom. The picture is an export from the Styronauten folder, a hand and a spring.
 
-![Oberfläche mit FX-Panel und einem Export im Bildfeld](docs/styronauten/gui-reference.jpg)
+![Interface with the FX panel and an export in the picture well](docs/styronauten/gui-reference.jpg)
 
-## Ablauf einer Schleife
+## How a loop runs
 
-Die Leertaste startet die Aufnahme. Der nächste Druck speichert sie als Hap-Loop und spielt sie. Das Livebild bleibt darüber, gemischt mit **Multiply**, **Screen** oder **Normal**. Die nächste Aufnahme legt sich als weitere Ebene darüber. Die erste Aufnahme setzt die Länge, Undo holt die vorige Ebene zurück, ein Doppel-`X` löscht den Loop.
+Space starts recording. The next press stores it as a Hap loop and plays it. The live image stays on top, blended with **Multiply**, **Screen**, or **Normal**. The next take stacks as another layer. The first take sets the length. Undo brings the previous layer back. A double `X` clears the loop.
 
-Quellen sind die Mac-Kamera, Continuity Camera, ein Testbild, Syphon oder das iPhone über LuckyTether. Gezeichnet wird am iPad mit LuckyPad.
+Sources are the Mac camera, Continuity Camera, a test pattern, Syphon, or the iPhone through LuckyTether. Drawing is on the iPad with LuckyPad.
 
-## LuckyTether und LuckyPad
+## LuckyTether and LuckyPad
 
-Zwei eigene Programme, nicht in diesem Repo. Sie liegen neben dem Sketch und verbinden sich über USB oder dasselbe Netz. LuckyLoop sucht sie von selbst.
+Two separate programs, not in this repo. They sit next to the sketch and connect over USB or the same network. LuckyLoop finds them on its own.
 
-Beim Styronauten-Abend, aus der GoPro: das iPad im Vordergrund ist LuckyPad, der Laptop zeigt LuckyLoop, an der Wand liegt dasselbe Bild. Die Kamera schaut auf den Lichttisch.
+At the Styronauten show, from the GoPro: the iPad in front is LuckyPad, the laptop shows LuckyLoop, and the same image is on the wall. The camera looks at the light table.
 
-![Live-Setup Styronauten DH5: LuckyPad, LuckyLoop und die Projektion](docs/styronauten/live-setup.jpg)
+![Styronauten DH5 live setup: LuckyPad, LuckyLoop, and the projection](docs/styronauten/live-setup.jpg)
 
 ### LuckyTether
 
-iPhone-App. Sie ist eine Bildquelle, kein Zeichenprogramm. Die Kamera wird als H.264 geschickt, Port 7878. Im Sketch die Quelle **Tether** wählen. Fokus, Belichtung und die Sperre stellt LuckyLoop, das Telefon führt sie aus. Der laufende Loop und das Onion-Bild können auf dem Display liegen, damit man beim nächsten Einzelbild sieht, was schon im Stapel ist.
+An iPhone app. It is a picture source, not a drawing program. The camera is sent as H.264 on port 7878. In the sketch, pick the source **Tether**. LuckyLoop sets focus, exposure, and the lock; the phone carries them out. The running loop and the onion image can sit on the phone display, so the next still shows what is already in the stack.
 
 ### LuckyPad
 
-iPad-App. Zeichenfläche für den Modus Draw, Port 7879. Dieselben Werkzeuge und dieselben sechs Farbfelder wie am Mac. Solange Draw an ist, geht der Strich in den Sketch und die Vorschau vom Mac kommt zurück aufs Pad. Ist Draw aus, bleibt die Verbindung, der Stift wartet. Onion, Play und die Zahl der Stoptrick-Bilder liest das Pad mit.
+An iPad app. A drawing surface for Draw mode, on port 7879. The same tools and the same six swatches as on the Mac. While Draw is on, the stroke goes into the sketch and the preview comes back from the Mac to the pad. When Draw is off, the connection stays and the pen waits. The pad also reads onion, play, and the stoptrick frame count.
 
-## Die sechs Modi
+## The six modes
 
-Die Leiste oben schaltet mit den Tasten `1` bis `6`. Live, Stoptrick und Draw sind Arbeitsmodi und schließen sich aus. Text, FX und Output legen sich darüber.
+The bar at the top switches with keys `1` through `6`. Live, Stoptrick, and Draw are work modes and exclude each other. Text, FX, and Output sit on top of them.
 
 ### 1 · Live
 
-Das Bild der Quelle, zugeschnitten, gezoomt, gespiegelt und gegraded. Die Leertaste nimmt auf und overdubbt. `[` und `]` ändern die Deckkraft des Livebilds über dem Loop. Ein Einfachdruck auf `0` setzt den Bildausschnitt auf 100 Prozent. Ein zweiter Druck kurz danach schaltet alle FX aus und löscht die Textfelder.
+The source image, cropped, zoomed, mirrored, and graded. Space records and overdubs. `[` and `]` change the opacity of the live image over the loop. A single press of `0` sets the framing back to 100 percent. A second press shortly after turns all FX off and clears the text fields.
 
-![Glaskugel, Livebild aus einem markierten Export](docs/styronauten/live-kristall.jpg)
+![A glass sphere, a live frame from a marked export](docs/styronauten/live-kristall.jpg)
 
-![Ring und Karte auf dem Lichttisch, ebenfalls aus den markierten Exporten](docs/styronauten/live-ring.jpg)
+![A ring and a card on the light table, also from the marked exports](docs/styronauten/live-ring.jpg)
 
 ### 2 · Stoptrick
 
-Einzelbilder vom Livebild, als eigener kleiner Film über dem Hap-Loop.
+Stills from the live image, a small film of their own on top of the Hap loop.
 
-Enter schießt ein Standbild auf den Stapel, bis zu 240 Bilder. Die Leertaste oder `M` spielt den Stapel mit eigener Bildrate, Voreinstellung 6 Bilder pro Sekunde. `,` und `.` gehen ein Bild vor oder zurück. Onion Skin liegt beim Schießen über dem Livebild. Der Stapel hat eigenen Zoom, Pan und Drehung.
+Enter shoots a still onto the stack, up to 240 frames. Space or `M` plays the stack at its own frame rate, 6 frames per second by default. `,` and `.` step one frame. Onion skin sits over the live image while shooting. The stack has its own zoom, pan, and rotation.
 
-`-` backt den Stapel auf den Hap-Loop. Die erste Ebene darf frei lang sein, jede weitere Bake ist ein Loop in der festgelegten Länge. Nach dem Bake können die Einzelbilder weg (Voreinstellung) oder liegen bleiben. `C` löscht nur den Stapel, der Hap-Loop bleibt.
+`-` bakes the stack onto the Hap loop. The first layer may be any length. Every later bake is a loop of the locked length. After the bake the stills can be cleared (the default) or kept. `C` clears only the stack. The Hap loop stays.
 
-Im Styronauten-Set ist das der Modus für einen Stab, einen Ball oder einen Kreisel. Hier zwei Bilder eines Stapels: der Stab auf der Hand, daneben das Rohr. Unten die Filmstreifen-Leiste, rechts Shoot, Hold, Pop und Bake.
+In the Styronauten set this is the mode for a stick, a ball, or a spinning top. Here are two frames of one stack: the stick on the hand, and the tube beside it. The filmstrip runs along the bottom. Shoot, Hold, Pop, and Bake are on the right.
 
-![Stoptrick im Workspace: zwei Einzelbilder, Filmstreifen, 8 fps](docs/styronauten/stoptrick.jpg)
+![Stoptrick in the workspace: two stills, the filmstrip, 8 fps](docs/styronauten/stoptrick.jpg)
 
 ### 3 · Draw
 
-Farbe direkt auf dem Bild, im Stil von Paint. Werkzeuge: Stift, Pinsel, Radierer, Füllen, Pipette, Spray, Linie, Rechteck, Ellipse, abgerundetes Rechteck. Raster schaltet auf harte Pixel. Sechs Farbfelder, per Doppelklick ein HSL-Pad. `⌘` und Pinch ändern die Pinselgröße.
+Paint straight onto the picture. Tools: pencil, brush, eraser, fill, eyedropper, spray, line, rectangle, ellipse, rounded rectangle. Raster switches to hard pixels. Six swatches; a double-click opens an HSL pad. `⌘` and pinch change the brush size.
 
-Gezeichnet wird mit der Maus, absolut mit dem Trackpad, oder vom iPad über LuckyPad. Die Tinte kann als Stoptrick-Bild mitgeschossen und mit `-` in den Hap-Loop gebacken werden. `Y` macht die letzte Geste rückgängig.
+Draw with the mouse, absolutely with the trackpad, or from the iPad through LuckyPad. Ink can be shot into the stoptrick stack and baked into the Hap loop with `-`. `Y` undoes the last gesture.
 
-![Gezeichnetes Auge und Pixel über einer Banknote](docs/styronauten/draw-dollar.jpg)
+![A drawn eye and pixels over a banknote](docs/styronauten/draw-dollar.jpg)
 
-![Pixel-Schrift STAND, über die Hand gezeichnet und mitgenommen](docs/styronauten/draw-stand.jpg)
+![The pixel word STAND, drawn over the hand and carried into the loop](docs/styronauten/draw-stand.jpg)
 
 ### 4 · Text
 
-Textfelder auf dem Livebild. Pinch skaliert, Drehen rotiert, Ziehen verschiebt. Dieselben Felder liegen auf Syphon und auf dem Beamer, solange sie on air sind. In den Loop gebrannt werden sie nur, wenn Aufnahme für Text an ist. Solange ein Feld den Fokus hat, sind die Programm-Tasten stumm und es wird getippt. `´` zeigt die Felder auch außerhalb des Text-Modus in der Vorschau.
+Text fields on the live image. Pinch scales, rotate turns, drag moves. The same fields go to Syphon and to the projector while they are on air. They are burned into the loop only when text recording is on. While a field has focus, program keys stay mute and typing goes into the field. `´` shows the fields in the preview even outside Text mode.
 
-Im Set von DH5 lagen so Zeilen über einer bereits laufenden Collage, ohne den Loop neu aufzunehmen. Hier die Pixel-Schrift aus Draw, die Zettel und die kleine Zeile darunter, alles in einem Loop.
+In the DH5 set, lines sat over a collage that was already running, without recording the loop again. Here the pixel type from Draw, the notes, and the small line underneath, all in one loop.
 
-![STYRO und NAUTEN, mit der Zeile darunter](docs/styronauten/text-styro.jpg)
+![STYRO and NAUTEN, with the line underneath](docs/styronauten/text-styro.jpg)
 
 ### 5 · FX
 
-Effekte sitzen auf einem von drei Zielen: **Live**, **Loop** oder **Output**. Ein Tastendruck blendet den Effekt in 280 ms ein oder aus. Halten schiebt den Parameter.
+Effects sit on one of three targets: **Live**, **Loop**, or **Output**. A key tap fades the effect in or out over 280 ms. Holding the key nudges the parameter.
 
-| Gruppe | Effekte |
+| Group | Effects |
 |---|---|
-| Farbe | Hue / Sat, Saturation, Contrast, Posterize, Threshold, Invert, Solarize, Colorize |
+| Color | Hue / Sat, Saturation, Contrast, Posterize, Threshold, Invert, Solarize, Colorize |
 | Form | Pixelate, Blur, Edge, Emboss, Glitch |
-| Raum | Mirror, Mirror H, Mirror V, Quad, Kaleido, Twirl, Ripple, Bulge, Slices, Flip, Rotate, Rot 180 |
-| Zeit | Echo, Trail, Strobe, SlitScan, RGB Delay |
-| Bewegung | Slide, Push |
+| Space | Mirror, Mirror H, Mirror V, Quad, Kaleido, Twirl, Ripple, Bulge, Slices, Flip, Rotate, Rot 180 |
+| Time | Echo, Trail, Strobe, SlitScan, RGB Delay |
+| Motion | Slide, Push |
 
-Deutsche Tastatur, obere Reihe `Q W E R T Z U I O P Ü +`:
+German keyboard, top row `Q W E R T Z U I O P Ü +`:
 
 Mirror, Quad, SlitScan, Glitch, Blur, Pixelate, Posterize, Twirl, Ripple, Bulge, Slices, Push.
 
-Grundreihe `A S D F G H J K L Ö Ä #`:
+Home row `A S D F G H J K L Ö Ä #`:
 
 Invert, Flip, Contrast, Rot 180, Strobe, Hue / Sat, Slide, Edge, Kaleido, Emboss, Echo, Colorize.
 
-RGB Delay liegt in der Liste und bekommt eine Taste erst, wenn sie zugewiesen wird.
+RGB Delay is in the list and gets a key only once one is assigned.
 
-![Quad: Feder und Hand in vier Feldern](docs/styronauten/fx-quad.jpg)
+![Quad: the spring and the hand in four fields](docs/styronauten/fx-quad.jpg)
 
-![Mirror, aus einer Flasche wird eine symmetrische Figur](docs/styronauten/fx-mirror.jpg)
+![Mirror: a bottle becomes a symmetrical figure](docs/styronauten/fx-mirror.jpg)
 
-![Slit-Scan, die Bewegung liegt als Streifen im Bild](docs/styronauten/fx-slit.jpg)
+![Slit scan: the motion sits in the picture as stripes](docs/styronauten/fx-slit.jpg)
 
-Aus den markierten Exporten, dieselbe Bühne:
+From the marked exports, the same stage:
 
-![Feder mit Echo, die Bewegung bleibt als Nachbild](docs/styronauten/fx-spring.jpg)
+![A spring with echo, the motion left as an afterimage](docs/styronauten/fx-spring.jpg)
 
-![Mirror und Farbe, aus der Mitte heraus](docs/styronauten/fx-bloom.jpg)
+![Mirror and color, opening out from the center](docs/styronauten/fx-bloom.jpg)
 
-![Hand und Feder unter Kaleido](docs/styronauten/fx-hand.jpg)
+![Hand and spring under kaleido](docs/styronauten/fx-hand.jpg)
 
-![Hand mit Nachleuchten](docs/styronauten/fx-burst.jpg)
+![A hand with afterglow](docs/styronauten/fx-burst.jpg)
 
 ### 6 · Output
 
-Zweiter Bildschirm, Vollbild, Ecken zum Ziehen für die Keystone-Korrektur. `R` setzt die Ecken zurück, `I` rückt sie etwas ein. Syphon-Ausgang ist unabhängig davon. `B` oder `9` blenden auf Schwarz. Ein kleines Live-Inset kann auf dem externen Bild liegen, ohne in den Loop zu gehen.
+A second display, fullscreen, with corners you can drag for keystone correction. `R` resets the corners, `I` insets them a little. The Syphon output is independent of that. `B` or `9` fades to black. A small live inset can sit on the external picture without going into the loop.
 
-## Tasten
+## Keys
 
-| Taste | Wirkung |
+| Key | What it does |
 |---|---|
 | `1` … `6` | Live, Stoptrick, Draw, Text, FX, Output |
-| Leertaste | Live: aufnehmen oder Overdub. Stoptrick: Stapel abspielen |
-| Enter | Stoptrick-Bild schießen |
-| `-` | Stapel auf den Hap-Loop backen |
-| `C` | Stoptrick-Bilder löschen, Loop bleibt |
-| `X` `X` | Hap-Loop und alle Frame-Stapel löschen |
-| `Y` | Undo. Im Draw die letzte Geste, im Stoptrick das letzte Bild, sonst die letzte Ebene. Mit Shift Redo |
-| `N` | Multiply und Screen wechseln |
-| `M` | Stoptrick-Play an oder aus |
-| `,` `.` | Bild im Stapel, oder Ebene wählen |
+| Space | Live: record or overdub. Stoptrick: play the stack |
+| Enter | Shoot a stoptrick still |
+| `-` | Bake the stack onto the Hap loop |
+| `C` | Clear the stoptrick frames, keep the loop |
+| `X` `X` | Clear the Hap loop and every frame stack |
+| `Y` | Undo. In Draw, the last gesture. In Stoptrick, the last still. Otherwise the last layer. Shift for redo |
+| `N` | Switch between Multiply and Screen |
+| `M` | Stoptrick play on or off |
+| `,` `.` | Step a frame in the stack, or pick a layer |
 | `B` | Blackout |
-| `8` | Beamer an oder aus |
-| `0` `0` | Ausschnitt zurück, FX aus, Text weg |
-| `Q`…`#` | FX, siehe oben |
+| `8` | Projector on or off |
+| `0` `0` | Framing back, FX off, text cleared |
+| `Q`…`#` | FX, as listed above |
 
-MIDI kann dieselben Funktionen belegen. Die Zuordnung liegt in der Set-Ansicht.
+MIDI can map the same functions. The mapping lives in the Set view.
 
-## Fallbeispiel Styronauten DH5
+## Case study: Styronauten DH5
 
-Das Projekt auf dem Rechner heißt `LuckyLoop-Project`. Es hat 668 Takes, `settings.json`, `text.json` und die Exporte unter `export/`. Die Bilder oben sind Einzelbilder aus diesen Loops, Stand 6. und 7. November 2026. Die Setliste behandelt jedes Stück als Rezept aus Modus, Gegenstand und Effekt, nicht als fertigen Clip.
+The project on this machine is called `LuckyLoop-Project`. It holds 668 takes, `settings.json`, `text.json`, and the exports under `export/`. The pictures above are frames from those loops, from 6 and 7 November 2026. The set list treats each piece as a recipe of mode, object, and effect, not as a finished clip.
 
-| Stück | Was der Loop dabei tut |
+| Piece | What the loop does |
 |---|---|
-| Zirkusfreak | Stoptrick eines Stabs, darüber mit Draw das Wort |
-| Organic | Hand mit Mirror und Rotate, Hue-Ebene mit wenig Deckkraft, Echo, Ripple |
-| Hoarder | Langsames Drop, dann Mirror, mit Undo zurück auf ein kleines Bild |
-| Baheux | Kaleido. Bake ohne Löschen der Einzelbilder, danach verschieben |
-| Disco Tuner | Stoptrick eines Balls, Draw setzt Rechtecke darüber |
-| Polynaut | Post-its als Figuren, ein Bild pro Beat der Geschichte |
-| Monolith | Unscharf als Erinnerung, Kreisel als feste Mitte, Text live darüber |
+| Zirkusfreak | Stoptrick of a stick, the word drawn over it |
+| Organic | A hand with Mirror and Rotate, a Hue layer at low opacity, Echo, Ripple |
+| Hoarder | A slow drop, then Mirror, then Undo back to a small picture |
+| Baheux | Kaleido. Bake without clearing the stills, then move them |
+| Disco Tuner | Stoptrick of a ball, with rectangles drawn over it |
+| Polynaut | Post-its as figures, one picture per beat of the story |
+| Monolith | Soft focus as a memory, a spinning top as a fixed center, text live on top |
 
-Dieselben Handgriffe — schießen, zeichnen, backen, Effekt auf Live oder Loop — laufen durch das ganze Set. Der Hap-Stapel bleibt das Gedächtnis, Stoptrick und Draw sind die Gesten darüber.
+The same moves — shoot, draw, bake, an effect on Live or Loop — run through the whole set. The Hap stack is the memory. Stoptrick and Draw are the gestures on top of it.
 
-## Öffnen
+## Open
 
-1. [Processing](https://processing.org/) installieren.
-2. Die Library **Syphon** über den Contribution Manager installieren. **Video** kommt mit Processing.
-3. Diesen Ordner als Sketch öffnen (`LuckyLoop.pde`) und starten.
+1. Install [Processing](https://processing.org/).
+2. Install the **Syphon** library through the Contribution Manager. **Video** ships with Processing.
+3. Open this folder as a sketch (`LuckyLoop.pde`) and run it.
 
-## Native Bibliotheken
+## Native libraries
 
-Unter `data/` liegen die macOS-Bibliotheken, die der Sketch lädt. Neu bauen, wenn sie auf dem Rechner nicht laden:
+The macOS libraries the sketch loads live under `data/`. Rebuild them if they fail to load on this machine:
 
 ```bash
 bash native/build-macmenu.sh
@@ -169,13 +169,13 @@ bash native/build-tether.sh
 bash native/build-h264dec.sh
 ```
 
-Dafür braucht es die Xcode-Kommandozeilenwerkzeuge und ein JDK mit `jni.h`. Das JDK von Processing reicht. `JAVA_HOME` setzen, wenn ein Script `jni.h` nicht findet.
+That needs the Xcode command-line tools and a JDK with `jni.h`. The JDK that ships with Processing is enough. Set `JAVA_HOME` if a script cannot find `jni.h`.
 
-`libcamctl.dylib` steuert Belichtung, Fokus, Zoom und Continuity. Quelltext: `native/camctl.m` und `native/uvc.m`. Ein Build-Script dafür liegt nicht bei.
+`libcamctl.dylib` controls exposure, focus, zoom, and Continuity. Source is `native/camctl.m` and `native/uvc.m`. There is no build script for it.
 
-## Schriften
+## Fonts
 
-- Source Code Pro: SIL Open Font License, Text in `data/OFL.txt`
+- Source Code Pro: SIL Open Font License, text in `data/OFL.txt`
 - Roboto Mono: Apache License 2.0
 
-`data/settings.json`, `data/app.json` und `data/camera-diag.txt` sind der Stand von diesem Rechner, inklusive Projektpfaden.
+`data/settings.json`, `data/app.json`, and `data/camera-diag.txt` are this machine's state, including project paths.
