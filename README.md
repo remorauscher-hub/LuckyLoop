@@ -4,9 +4,9 @@ LuckyLoop ist ein Live-Video-Instrument für macOS. Eine Kamera, ein iPhone oder
 
 Gebaut für improvisierte Bühnenbilder. Unten steht der Ablauf vom Auftritt **Styronauten, DH5**: Schwarzlicht, Gegenstände auf dem Tisch, Loops direkt zur Musik.
 
-Die Oberfläche. Oben die sechs Modi, unten die Tastatur, rechts Quelle, Ausschnitt und Grade. Im großen Bildfeld liegt ein Export aus dem Styronauten-Ordner, Hand und Feder. Links oben bleibt die Rohvorschau auf dem Testbild Grid.
+Die Oberfläche im Modus FX. Oben die sechs Modi, rechts die Effektliste, unten die Tastatur. Im Bildfeld liegt ein Export aus dem Styronauten-Ordner, Hand und Feder.
 
-![Oberfläche mit einem Export im Bildfeld, Rohvorschau auf dem Grid](docs/styronauten/gui-reference.jpg)
+![Oberfläche mit FX-Panel und einem Export im Bildfeld](docs/styronauten/gui-reference.jpg)
 
 ## Ablauf einer Schleife
 
