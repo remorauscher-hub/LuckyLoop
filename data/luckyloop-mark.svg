@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- LuckyLoop mark: loop + magic spark -->
+  <ellipse cx="64" cy="70" rx="42" ry="37"
+           stroke="#ececef" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 28 78 A 42 37 0 0 1 98 52"
+        stroke="#c4a574" stroke-width="11" stroke-linecap="round"/>
+  <g transform="translate(96 34)">
+    <path d="M0,-18 L5,-5 L18,0 L5,5 L0,18 L-5,5 L-18,0 L-5,-5 Z"
+          fill="#c4a574"/>
+    <circle cx="14" cy="-3" r="2.4" fill="#ececef"/>
+    <circle cx="-2" cy="-15" r="1.8" fill="#ececef"/>
+  </g>
+</svg>

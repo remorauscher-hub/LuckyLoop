@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+hs_err_pid*.log
+
+# machine-local state (project paths, camera diagnostics, temp frames)
+data/settings.json
+data/app.json
+data/camera-diag.txt
+data/_onion_tmp.jpg
