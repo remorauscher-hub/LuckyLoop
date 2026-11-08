@@ -4,7 +4,13 @@ LuckyLoop ist ein Live-Video-Instrument für macOS. Eine Kamera, ein iPhone oder
 
 Gebaut für improvisierte Bühnenbilder. Unten steht der Ablauf vom Auftritt **Styronauten, DH5**: Schwarzlicht, Gegenstände auf dem Tisch, Loops direkt zur Musik.
 
-![Kaleidoskop aus Papierdreiecken, exportiert aus dem Styronauten-Projekt](docs/styronauten/fx-kaleido.jpg)
+So sieht der leere Workspace aus, noch ohne Projekt. Quelle ist das Testbild Grid.
+
+![LuckyLoop ohne Projekt, Testbild Grid](docs/styronauten/workspace-blank.jpg)
+
+Im Set, Modus FX, Mirror auf dem Loop. Dieselben Leisten, dieselbe Tastatur, das Bild kommt von der Bühne.
+
+![Workspace im FX-Modus, Mirror auf einem Loop aus dem Styronauten-Set](docs/styronauten/title-fx.jpg)
 
 ## Ablauf einer Schleife
 
@@ -28,9 +34,9 @@ Enter schießt ein Standbild auf den Stapel, bis zu 240 Bilder. Die Leertaste od
 
 `-` backt den Stapel auf den Hap-Loop. Die erste Ebene darf frei lang sein, jede weitere Bake ist ein Loop in der festgelegten Länge. Nach dem Bake können die Einzelbilder weg (Voreinstellung) oder liegen bleiben. `C` löscht nur den Stapel, der Hap-Loop bleibt.
 
-Im Styronauten-Set ist das der Modus für einen Stab, einen Ball oder einen Kreisel: ein Gegenstand wird Bild für Bild bewegt und dann als Loop unter das weitere Livebild gelegt.
+Im Styronauten-Set ist das der Modus für einen Stab, einen Ball oder einen Kreisel. Hier zwei Bilder eines Stapels: der Stab auf der Hand, daneben das Rohr. Unten die Filmstreifen-Leiste, rechts Shoot, Hold, Pop und Bake.
 
-![Post-it als Standbild aus einem Export des Styronauten-Projekts](docs/styronauten/stop-postit.jpg)
+![Stoptrick im Workspace: zwei Einzelbilder, Filmstreifen, 8 fps](docs/styronauten/stoptrick.jpg)
 
 ### 3 · Draw
 
