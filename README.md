@@ -42,6 +42,10 @@ Die Leiste oben schaltet mit den Tasten `1` bis `6`. Live, Stoptrick und Draw si
 
 Das Bild der Quelle, zugeschnitten, gezoomt, gespiegelt und gegraded. Die Leertaste nimmt auf und overdubbt. `[` und `]` ändern die Deckkraft des Livebilds über dem Loop. Ein Einfachdruck auf `0` setzt den Bildausschnitt auf 100 Prozent. Ein zweiter Druck kurz danach schaltet alle FX aus und löscht die Textfelder.
 
+![Glaskugel, Livebild aus einem markierten Export](docs/styronauten/live-kristall.jpg)
+
+![Ring und Karte auf dem Lichttisch, ebenfalls aus den markierten Exporten](docs/styronauten/live-ring.jpg)
+
 ### 2 · Stoptrick
 
 Einzelbilder vom Livebild, als eigener kleiner Film über dem Hap-Loop.
@@ -68,7 +72,9 @@ Gezeichnet wird mit der Maus, absolut mit dem Trackpad, oder vom iPad über Luck
 
 Textfelder auf dem Livebild. Pinch skaliert, Drehen rotiert, Ziehen verschiebt. Dieselben Felder liegen auf Syphon und auf dem Beamer, solange sie on air sind. In den Loop gebrannt werden sie nur, wenn Aufnahme für Text an ist. Solange ein Feld den Fokus hat, sind die Programm-Tasten stumm und es wird getippt. `´` zeigt die Felder auch außerhalb des Text-Modus in der Vorschau.
 
-Im Set von DH5 lagen so Zeilen über einer bereits laufenden Collage, ohne den Loop neu aufzunehmen.
+Im Set von DH5 lagen so Zeilen über einer bereits laufenden Collage, ohne den Loop neu aufzunehmen. Hier die Pixel-Schrift aus Draw, die Zettel und die kleine Zeile darunter, alles in einem Loop.
+
+![STYRO und NAUTEN, mit der Zeile darunter](docs/styronauten/text-styro.jpg)
 
 ### 5 · FX
 
@@ -98,11 +104,19 @@ RGB Delay liegt in der Liste und bekommt eine Taste erst, wenn sie zugewiesen wi
 
 ![Slit-Scan, die Bewegung liegt als Streifen im Bild](docs/styronauten/fx-slit.jpg)
 
+Aus den markierten Exporten, dieselbe Bühne:
+
+![Feder mit Echo, die Bewegung bleibt als Nachbild](docs/styronauten/fx-spring.jpg)
+
+![Mirror und Farbe, aus der Mitte heraus](docs/styronauten/fx-bloom.jpg)
+
+![Hand und Feder unter Kaleido](docs/styronauten/fx-hand.jpg)
+
+![Hand mit Nachleuchten](docs/styronauten/fx-burst.jpg)
+
 ### 6 · Output
 
 Zweiter Bildschirm, Vollbild, Ecken zum Ziehen für die Keystone-Korrektur. `R` setzt die Ecken zurück, `I` rückt sie etwas ein. Syphon-Ausgang ist unabhängig davon. `B` oder `9` blenden auf Schwarz. Ein kleines Live-Inset kann auf dem externen Bild liegen, ohne in den Loop zu gehen.
-
-![Live-Gegenstand unter Schwarzlicht, hier eine Glaskugel, bevor FX und Overdub dazukommen](docs/styronauten/live-kristall.jpg)
 
 ## Tasten
 
