@@ -1,0 +1,9 @@
+time=2026-11-07 22:01:50
+continuityOptIn=false
+continuitySeen=false
+camCtlLoaded=true fail=
+gstCount=1
+gst[0]=FaceTime HD Camera
+entries=1
+cam[0] label=FaceTime HD Camera cont=false gst=true gstIndex=0 uid=47B4B64B-7067-4B9C-AD2B-AE273A71F4B5
+hint=macOS hides Continuity Camera from this sketch JVM. Run enable-iphone-camera.command (patches Processing + Java runtime), Cmd+Q, reopen, Refresh.

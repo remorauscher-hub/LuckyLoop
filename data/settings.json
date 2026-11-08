@@ -1,0 +1,123 @@
+{
+  "camExposure": 0,
+  "fxPosterize": 0,
+  "hwLens": -1,
+  "takeCount": 11,
+  "camContrast": 0,
+  "curveChannel": 0,
+  "project": "/Users/brian/Documents/Lucky Loop",
+  "source": 0,
+  "camClarity": 0,
+  "hwZoomTouched": false,
+  "midi": [],
+  "syIndex": 0,
+  "fxHue": 0,
+  "camHighlights": 0,
+  "capH": 1080,
+  "hwBiasTouched": true,
+  "liveInOutput": false,
+  "hwCenterStage": false,
+  "hwAutoExposure": false,
+  "syServer": "",
+  "camScale": 1,
+  "showGrid": false,
+  "camVibrance": 0,
+  "version": 3,
+  "hwZoom": 1,
+  "hwFocus": 0.35,
+  "camBrilliance": 0,
+  "fxFeedback": 0,
+  "fxInvert": false,
+  "fullscreen": true,
+  "camRotation": 0,
+  "camWarmth": 0,
+  "hwAutoFocus": false,
+  "beamerOpen": false,
+  "mirror": true,
+  "blend": 1,
+  "camSharp": 0,
+  "hwBias": 0.45,
+  "capFps": 30,
+  "fxPixel": 1,
+  "camBrightness": 0,
+  "liveOpacity": 0,
+  "corners": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 1
+    },
+    {
+      "x": 0,
+      "y": 1
+    }
+  ],
+  "camBlack": 0,
+  "camVignette": 0,
+  "syApp": "",
+  "fxThreshold": 0,
+  "camNoise": 0,
+  "camera": "C922 Pro Stream Webcam",
+  "camShadows": 0,
+  "camTint": 0,
+  "midiDevice": "",
+  "hwAutoWhite": false,
+  "capW": 1920,
+  "inspector": 0,
+  "testPattern": 0,
+  "camSaturation": 0,
+  "hwFocusTouched": true,
+  "curves": [
+    [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ]
+  ],
+  "hwLensLock": true,
+  "camZoom": 1,
+  "syphonOut": true,
+  "displayId": "Display 4"
+}

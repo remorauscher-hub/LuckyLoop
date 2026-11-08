@@ -32,6 +32,8 @@ Dafür braucht es die Xcode-Kommandozeilenwerkzeuge und ein JDK mit `jni.h` (das
 - Source Code Pro: SIL Open Font License, Text in `data/OFL.txt`
 - Roboto Mono: Apache License 2.0
 
-## Nicht im Repo
+## Übrige Programme
 
-`data/settings.json`, `data/app.json` und `data/camera-diag.txt` bleiben lokal. Darin stehen Projektpfade und Kameradiagnose von diesem Rechner. Der Sketch legt sie beim Benutzen neu an.
+LuckyCam, LuckyPad, LuckyTether, PhoneCamTest, VideoLooper und die Helfer-Skripte für die Continuity-Kamera liegen in [Looper](https://github.com/remorauscher-hub/Looper).
+
+`data/settings.json`, `data/app.json` und `data/camera-diag.txt` sind der Stand von diesem Rechner, inklusive Projektpfaden.
