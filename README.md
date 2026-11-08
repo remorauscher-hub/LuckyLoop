@@ -16,7 +16,23 @@ Im Set, Modus FX, Mirror auf dem Loop. Dieselben Leisten, dieselbe Tastatur, das
 
 Die Leertaste startet die Aufnahme. Der nächste Druck speichert sie als Hap-Loop und spielt sie. Das Livebild bleibt darüber, gemischt mit **Multiply**, **Screen** oder **Normal**. Die nächste Aufnahme legt sich als weitere Ebene darüber. Die erste Aufnahme setzt die Länge, Undo holt die vorige Ebene zurück, ein Doppel-`X` löscht den Loop.
 
-Quellen sind die Mac-Kamera, Continuity Camera, ein Testbild, Syphon oder das iPhone über LuckyTether. iPad-Zeichnung kommt über LuckyPad. Beide Programme liegen nicht in diesem Repo.
+Quellen sind die Mac-Kamera, Continuity Camera, ein Testbild, Syphon oder das iPhone über LuckyTether. Gezeichnet wird am iPad mit LuckyPad.
+
+## LuckyTether und LuckyPad
+
+Zwei eigene Programme, nicht in diesem Repo. Sie liegen neben dem Sketch und verbinden sich über USB oder dasselbe Netz. LuckyLoop sucht sie von selbst.
+
+Beim Styronauten-Abend, aus der GoPro: das iPad im Vordergrund ist LuckyPad, der Laptop zeigt LuckyLoop, an der Wand liegt dasselbe Bild. Die Kamera schaut auf den Lichttisch.
+
+![Live-Setup Styronauten DH5: LuckyPad, LuckyLoop und die Projektion](docs/styronauten/live-setup.jpg)
+
+### LuckyTether
+
+iPhone-App. Sie ist eine Bildquelle, kein Zeichenprogramm. Die Kamera wird als H.264 geschickt, Port 7878. Im Sketch die Quelle **Tether** wählen. Fokus, Belichtung und die Sperre stellt LuckyLoop, das Telefon führt sie aus. Der laufende Loop und das Onion-Bild können auf dem Display liegen, damit man beim nächsten Einzelbild sieht, was schon im Stapel ist.
+
+### LuckyPad
+
+iPad-App. Zeichenfläche für den Modus Draw, Port 7879. Dieselben Werkzeuge und dieselben sechs Farbfelder wie am Mac. Solange Draw an ist, geht der Strich in den Sketch und die Vorschau vom Mac kommt zurück aufs Pad. Ist Draw aus, bleibt die Verbindung, der Stift wartet. Onion, Play und die Zahl der Stoptrick-Bilder liest das Pad mit.
 
 ## Die sechs Modi
 
